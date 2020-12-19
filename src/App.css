@@ -1,6 +1,6 @@
 .App{
   text-align: center;
-  background-image: linear-gradient(black, white);
+  background-color: rgb(175, 175, 175);
 }
 .header-content {
   background-image: url("./images/backgroundHeader.jpg");
@@ -13,12 +13,101 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+.header-content nav {
+  margin-top: 12%;
+}
+
+.home-links a{
+  color: rgba(255, 255, 255, 0.459);
+  font-size: 1.2em;
+  margin-right: 3%;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+}
+
+.home-links a:hover{
+  color: rgb(255, 255, 255);
+  transition: 0.7s;
+}
+
+.home-links a:active{
+  color: chocolate;
+  transition: 0.1s;
+}
+
+.logo {
+  border-radius: 50%;
+  max-width: 30%;
+  opacity: 80%;
+}
+
+.logo:hover{
+  opacity: 90%;
+  transition: 0.5s;
+}
+
+.logo:active{
+  opacity: 100%;
+}
+
+.home-map-div-artists {
+  display: inline-flex;
+  font-size: 13px;
+  text-align: center;
+  width: 95%;
+  align-content: space-between;
+}
+
+.img-artists-home {
+  height: 70%;
+  width: 95%;
+  border-radius: 50%;
+  opacity: 25%;
+}
+
+.img-artists-home:hover{
+  opacity: 100%;
+  transform: translateX(10px) scale(1.2);
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.google-maps{
+  width: 90%;
+  height: 500px;
+}
+
+.tattoos-galery{
+  height: 19em;
+  width: 19.5%;
+  margin-top: 1%;
+  margin-right: 0.5%;
+  border-radius: 15px;
+}
+
+.tattoos-galery:hover{
+  transform: translatey(5px) scale(1);
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+#footer {
+  position: absolute;
+  background-color: #333333;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #ffffff85;
+  font-size: 0.8em;
+}
+
 .social-midia{
   display: flex;
-  width: 9%;
+  align-items: center;
+  width: 10%;
+  margin-top: 1%;
   align-content: space-around;
-  align-self: flex-start;
-  margin-left: 5%;
 }
 .social-midia img{
   border-radius: 50%;
@@ -31,61 +120,4 @@
 }
 .social-midia img:active{
   opacity: 100%;
-}
-.header-content nav {
-  margin-top: 12%;
-}
-.home-links a{
-  color: rgba(255, 255, 255, 0.459);
-  font-size: 1.2em;
-  margin-right: 3%;
-  letter-spacing: 0.15em;
-  text-decoration: none;
-}
-.home-links a:hover{
-  color: rgb(255, 255, 255);
-  transition: 0.7s;
-}
-.home-links a:active{
-  color: chocolate;
-  transition: 0.1s;
-}
-.logo {
-  border-radius: 50%;
-  max-width: 30%;
-  opacity: 80%;
-}
-.logo:hover{
-  opacity: 90%;
-  transition: 0.5s;
-}
-.logo:active{
-  opacity: 100%;
-}
-.home-content {
-  display: inline-flex;
-  font-size: 13px;
-  text-align: center;
-  width: 95%;
-  align-content: space-between;
-}
-.img-artists-home {
-  height: 70%;
-  width: 95%;
-  border-radius: 50%;
-  opacity: 25%;
-}
-.img-artists-home:hover{
-  opacity: 100%;
-  transform: translateX(10px) scale(1.2);
-  box-shadow: 5px 5px 15px 5px #000000;
-}
-
-.tattoos-galery{
-  height: 19em;
-  width: 19.5%;
-  margin-top: 1%;
-  margin-right: 0.5%;
-  border-radius: 15px;
-  box-shadow: 5px 5px 15px 5px #000000;
 }

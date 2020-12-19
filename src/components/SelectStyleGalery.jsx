@@ -8,19 +8,24 @@ class StyleSelecedGalery extends React.Component {
         const { galeryTattoosFunc } = this.props;
         return (
             artistsData
-                .map(artist => <button key={artist.name}
-                    onClick={
-                        () => galeryTattoosFunc(artist.tattoosGalery)
-                    }>
-                      {artist.specialt}
-                </button>
-                )
+                .map(artist => {
+                    const { tattoosGalery, specialt, aboutStyle, styleFeatures, name } = artist;
+                    return (
+                        <button key={name}
+                            onClick={
+                                () => galeryTattoosFunc(tattoosGalery, aboutStyle, styleFeatures)
+                            }>
+                            {specialt}
+                        </button>
+                    )
+                }
+            )
         )
     }
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    galeryTattoosFunc: (arrTattoosStyle) => dispatch(galeryTattoosAction(arrTattoosStyle)),
+    galeryTattoosFunc: (arrTattoosStyle, aboutStyle, styleFeatures) => dispatch(galeryTattoosAction(arrTattoosStyle, aboutStyle, styleFeatures)),
 })
 
 export default connect(null, mapDispatchToProps)(StyleSelecedGalery);
