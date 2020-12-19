@@ -8,9 +8,9 @@ class Artist extends React.Component {
         return(
             <div>
                 <Link className='link-home-artists'>
-                <span>{name}</span>
-                <img className='img-artists-home' src={imgPath} alt="Foto da artista Amanda" />
-                <b>{specialt}</b>
+                    <span>{name}</span>
+                    <img className='img-artists-home' src={imgPath} alt="Foto da artista Amanda" />
+                    <b>{specialt}</b>
                 </Link>
             </div>
         )

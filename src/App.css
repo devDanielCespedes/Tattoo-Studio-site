@@ -78,6 +78,7 @@
 .img-artists-home:hover{
   opacity: 100%;
   transform: translateX(10px) scale(1.2);
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .tattoos-galery{
