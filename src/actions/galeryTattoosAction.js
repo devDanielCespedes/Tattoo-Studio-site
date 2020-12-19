@@ -1,8 +1,8 @@
 const styleGalerySelected = 'SELECTED_STYLE_GALERY';
 
- export default function galeryTattoos(style) {
+ export default function galeryTattoos(arrTattoosStyle) {
     return {
         type: styleGalerySelected,
-        tattoosGalery: style,
+        tattoosGalery: arrTattoosStyle,
     }
 }
