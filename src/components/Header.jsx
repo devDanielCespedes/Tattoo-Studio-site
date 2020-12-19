@@ -9,9 +9,9 @@ class Header extends React.Component {
         return(
             <div className='header-content'>
               <div className='social-midia'>
-                <a href="https://www.facebook.com/calmlikeabombtattoo" rel="noreferrer" target="_blank" class="facebook-icon"><img src={Facebook} alt=""/></a>
-                <a href="https://www.instagram.com/dancespedes" rel="noreferrer" target="_blank" class="instagram-icon"><img src={Instagram} alt=""/></a>
-                <a href="https://api.whatsapp.com/send?phone=5511952744571" rel="noreferrer" target="_blank"  class="whatsapp-icon"><img src={WhatsApp} alt=""/></a>
+                <a href="https://www.facebook.com/calmlikeabombtattoo" rel="noreferrer" target="_blank" className="facebook-icon"><img src={Facebook} alt=""/></a>
+                <a href="https://www.instagram.com/dancespedes" rel="noreferrer" target="_blank" className="instagram-icon"><img src={Instagram} alt=""/></a>
+                <a href="https://api.whatsapp.com/send?phone=5511952744571" rel="noreferrer" target="_blank"  className="whatsapp-icon"><img src={WhatsApp} alt=""/></a>
               </div>
               <div className='home-links'>
                 <Link
@@ -27,11 +27,6 @@ class Header extends React.Component {
                     to='/'
                   >
                     HOME
-                  </Link>
-                  <Link
-                    to='/artists'
-                  >
-                    ARTISTS
                   </Link>
                   <Link
                     to='/galery'
