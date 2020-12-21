@@ -1,4 +1,4 @@
-.App{
+.App {
   text-align: center;
   background-color: rgb(175, 175, 175);
 }
@@ -13,12 +13,24 @@
   align-items: center;
   justify-content: flex-end;
 }
+.header-content-after {
+  background-image: url("./images/backgroundHeader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 15em;
+  transition: 1.7s;
+}
 
 .header-content nav {
   margin-top: 12%;
 }
 
-.home-links a{
+.home-links a {
   color: rgba(255, 255, 255, 0.459);
   font-size: 1.2em;
   margin-right: 3%;
@@ -26,31 +38,51 @@
   text-decoration: none;
 }
 
-.home-links a:hover{
+.home-links a:hover {
   color: rgb(255, 255, 255);
   transition: 0.7s;
 }
 
-.home-links a:active{
+.home-links a:active {
   color: chocolate;
   transition: 0.1s;
 }
 
 .logo {
   border-radius: 50%;
-  max-width: 30%;
   opacity: 80%;
+  max-width: 40%;
+  transition: transform 1.7s cubic-bezier(0.42, 0, 0.15, 1.4);
 }
 
-.logo:hover{
+.logo-after {
+  border-radius: 50%;
+  max-width: 18%;
+  opacity: 80%;
+  transform: translate(-220%, 100%) rotate(360deg);
+}
+
+.logo img {
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.logo:hover {
   opacity: 90%;
   transition: 0.5s;
 }
 
-.logo:active{
+.logo:active {
   opacity: 100%;
 }
-
+.current-page-header {
+  color: chocolate;
+  font-size: 2em;
+  margin: 0 0 2% 30%;
+  box-shadow: 5px 5px 15px 5px #000000;
+  background-color: #c5c5c573;
+  width: 50%;
+  text-transform: uppercase;
+}
 .home-map-div-artists {
   display: inline-flex;
   font-size: 13px;
@@ -66,18 +98,18 @@
   opacity: 25%;
 }
 
-.img-artists-home:hover{
+.img-artists-home:hover {
   opacity: 100%;
   transform: translateX(10px) scale(1.2);
   box-shadow: 5px 5px 15px 5px #000000;
 }
 
-.google-maps{
-  width: 90%;
+.google-maps {
+  width: 40%;
   height: 500px;
 }
 
-.tattoos-galery{
+.tattoos-galery {
   height: 19em;
   width: 19.5%;
   margin-top: 1%;
@@ -85,7 +117,7 @@
   border-radius: 15px;
 }
 
-.tattoos-galery:hover{
+.tattoos-galery:hover {
   transform: translatey(5px) scale(1);
   box-shadow: 5px 5px 15px 5px #000000;
 }
@@ -102,22 +134,22 @@
   font-size: 0.8em;
 }
 
-.social-midia{
+.social-midia {
   display: flex;
   align-items: center;
   width: 10%;
   margin-top: 1%;
   align-content: space-around;
 }
-.social-midia img{
+.social-midia img {
   border-radius: 50%;
   width: 70%;
   opacity: 45%;
 }
-.social-midia img:hover{
+.social-midia img:hover {
   opacity: 65%;
   transition: 0.5s;
 }
-.social-midia img:active{
+.social-midia img:active {
   opacity: 100%;
 }
