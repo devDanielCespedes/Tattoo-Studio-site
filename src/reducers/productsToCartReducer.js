@@ -9,7 +9,6 @@ function productToCartReducer(state = INITIAL_STATE, action) {
             return{
                 ...state,
                 cart: [action.newProductToCart, ...state.cart],
-                total: action.total + state.total,
             }
         default:
             return state;

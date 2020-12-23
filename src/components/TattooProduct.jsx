@@ -10,7 +10,7 @@ class TattoosProducts extends React.Component {
     isProductInTheCart(newProduct) {
      const { addToCartFunc, cart } = this.props
 
-     const alreadyExistThisProductInTheCart = cart.find(product => product.id === newProduct.id)
+     const alreadyExistThisProductInTheCart = cart.find(product => product.id === newProduct.id);
      alreadyExistThisProductInTheCart ? alert('This product has already been added to the cart')
      : addToCartFunc(newProduct);
     }

@@ -3,19 +3,18 @@ import { connect } from 'react-redux';
 import CartProduct from '../components/CartProduct';
 class Cart extends React.Component {
     render() {
-        const { arrProductsToCart, total } = this.props;
+        const { cart } = this.props;
+        console.log(cart)
         return(
             <div>
-                {arrProductsToCart ? arrProductsToCart.map((product) => <CartProduct product={product} />) :  'cart'}
-                <p>Total: ${total}</p>
+                {cart.length !== 0 ? cart.map((product) => <CartProduct product={product} />) :  'empty cart'}
             </div>
         )
     }
 }
 
 const mapStateToProps = (state) => ({
-    arrProductsToCart: state.productToCartReducer.cart,
-    total: state.productToCartReducer.total
+    cart: state.productToCartReducer.cart,
 })
 
 export default connect(mapStateToProps)(Cart);
