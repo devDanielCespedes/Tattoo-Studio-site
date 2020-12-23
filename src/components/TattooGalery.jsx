@@ -9,8 +9,8 @@ class TattooGalery extends React.Component {
             <div className='galery-content'>
                 {tattoosGalery
                 .map(tattoo => <img key={tattoo} className='tattoos-galery' alt='tattos photos' src={tattoo} />)}
-                <p>{aboutStyle}</p>
-                <p>{styleFeatures}</p>
+                <p className='p-home-and-gallery'>{aboutStyle}</p>
+                <p className='p-home-and-gallery'>{styleFeatures}</p>
             </div>
         )
     }
