@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import addToCartAction from '../actions/addToCartAction';
+import { addToCartAction } from '../actions/cartActions';
 class TattoosProducts extends React.Component {
     constructor() {
         super();
@@ -10,7 +10,7 @@ class TattoosProducts extends React.Component {
     isProductInTheCart(newProduct) {
      const { addToCartFunc, cart } = this.props
 
-     const alreadyExistThisProductInTheCart = cart.find(product => product.id === newProduct.id);
+     const alreadyExistThisProductInTheCart = cart.find(product => product.newProduct.id === newProduct.id);
      alreadyExistThisProductInTheCart ? alert('This product has already been added to the cart')
      : addToCartFunc(newProduct);
     }

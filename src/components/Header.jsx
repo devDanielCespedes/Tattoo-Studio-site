@@ -47,14 +47,14 @@ class Header extends React.Component {
                     PRODUCTS
                   </Link>
                   <Link
-                    to='/contact'
-                  >
-                    CONTACT
-                  </Link>
-                  <Link
                     to='/cart'
                   >
                     CART
+                  </Link>
+                  <Link
+                    to='/contact'
+                  >
+                    CONTACT
                   </Link>
               </nav>
             </div>
