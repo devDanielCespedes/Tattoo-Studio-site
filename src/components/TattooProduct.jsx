@@ -35,7 +35,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispathToProps = (dispatch) => ({
-    addToCartFunc: (newProduct, total) => dispatch(addToCartAction(newProduct)),
+    addToCartFunc: (newProduct) => dispatch(addToCartAction(newProduct)),
 })
 
 export default connect(mapStateToProps, mapDispathToProps)(TattoosProducts);

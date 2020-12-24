@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import removeItemCartAction from '../actions/removeItemCartAction';
 
 class CartProduct extends React.Component {
     constructor() {
@@ -15,9 +17,9 @@ class CartProduct extends React.Component {
         })
     }
 
-    removeQuantity(){
+    removeQuantity() {
         let { quantity } = this.state
-        if(quantity === 1) {
+        if (quantity === 1) {
             alert('quantidade minima atingida');
             return
         }
@@ -26,23 +28,40 @@ class CartProduct extends React.Component {
         })
     }
     render() {
-        const { price, title, thumbnail } = this.props.product;
-        const { quantity } = this.state
-        return(
+        const { product, removeItem, cart } = this.props;
+        const { quantity } = this.state;
+        return (
             <div>
-                <img src={thumbnail} alt="tattoos product" />
-                <p>{title}</p>
-                <p>${price}</p>
+                <img src={product.thumbnail} alt="tattoos product" />
+                <p>{product.title}</p>
+                <p>${product.price}</p>
                 <button type='button'
-                    onClick={() => this.removeQuantity()}
+                    onClick={() => {
+                        this.removeQuantity();
+                    }
+                    }
                 >-</button>
                 <span>quantity: {quantity}</span>
                 <button type='button'
-                    onClick={() => this.addQuantity()}
+                    onClick={() => {
+                        this.addQuantity();
+                    }
+                    }
                 >+</button>
+                <button type='button'
+                    onClick={() => removeItem(cart, product)}
+                >Remove</button>
             </div>
         )
     }
 }
 
-export default CartProduct;
+const mapStateToProps = (state) => ({
+    cart: state.productToCartReducer.cart,
+})
+
+const mapDispatchToProps = (dispatch) => ({
+    removeItem: (cart, itemToRemove) => dispatch(removeItemCartAction(cart, itemToRemove)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CartProduct);
