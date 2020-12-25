@@ -170,17 +170,30 @@
 
 .cart-content {
   display: flex;
-  width: 80%;
+  width: 90%;
   flex-direction: column;
   align-items: center;
 }
 
 .cart-product {
-
+  height: 3em;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0.5%;
 }
 
-.cart-product button{
-  max-height: 1.5em;
+.div-quantity {
+  display: flex;
+  height: 1.5em;
+  justify-content: space-around;
+  width: 15%;
+  align-self: center;
+}
+.remove-item-btn {
+ margin-left: 22%;
+}
+.quantity-item {
   align-self: center;
 }
 

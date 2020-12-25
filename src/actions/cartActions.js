@@ -1,6 +1,7 @@
 const addToCartType = "ADD_TO_CART";
 const removeItemCartType = "REMOVE_ITEM_CART";
 const updateQuantityType = 'UPDATE_QUANTITY';
+const totalPrice = 'TOTAL_PRICE';
 
 export function addToCartAction(newProduct) {
   return {
@@ -13,10 +14,10 @@ export function addToCartAction(newProduct) {
 }
 
 export function removeItemCartAction(cart, itemToRemove) {
-  const upDateCart = cart.filter((product) => product.newProduct.id !== itemToRemove.id);
+  const upDateCart = cart.filter((product) => product !== itemToRemove);
   return {
     type: removeItemCartType,
-    upDateCart: upDateCart,
+    upDateCart,
   };
 }
 
@@ -27,5 +28,12 @@ export function upDateCartQuantity(productId, quantity) {
       productId,
       quantity,
     }
+  }
+}
+
+export function totalPriceAction(totalPriceCart) {
+  return {
+    type: totalPrice,
+    totalPriceCart,
   }
 }

@@ -3,63 +3,58 @@ import { connect } from 'react-redux';
 import { removeItemCartAction, upDateCartQuantity } from '../actions/cartActions';
 
 class CartProduct extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            quantity: 1,
-        }
-    }
-
     addQuantity(product) {
-        let { quantity } = this.state
+        let { quantity } = product
         const { upDateQuantity } = this.props
-        console.log(product)
-        if(quantity >= product.newProduct.available_quantity) {
-            alert('limite em estoque atingido')
+        if (quantity >= product.newProduct.available_quantity) {
+            alert(`${quantity} is the quantity we have in stock`)
             return
         }
-        this.setState(({
-            quantity: quantity += 1
-        }), () => upDateQuantity(product.newProduct.id, quantity))
+        quantity = quantity += 1
+        upDateQuantity(product.newProduct.id, quantity)
     }
 
     removeQuantity(product) {
-        let { quantity } = this.state
+        let { quantity } = product
         const { upDateQuantity } = this.props
         if (quantity === 1) {
-            alert('quantidade minima atingida');
+            alert(`${quantity} item is the minimum allowed`);
             return
         }
-        this.setState(({
-            quantity: quantity -= 1
-        }), () => upDateQuantity(product.newProduct.id, quantity))
+
+        quantity = quantity -= 1
+       upDateQuantity(product.newProduct.id, quantity)
     }
     render() {
         const { product, removeItem, cart } = this.props;
-        const { quantity } = this.state;
         return (
             <div className='cart-product'>
                 <img src={product.newProduct.thumbnail} alt="tattoos product" />
                 <p>{product.newProduct.title}</p>
-                <button type='button'
-                    onClick={() => {
-                        this.removeQuantity(product);
-                    }
-                }
-                >-</button>
-                <span>quantity: {quantity}</span>
-                <button type='button'
-                    onClick={() => {
-                        this.addQuantity(product);
-                    }
-                }
-                >+</button>
-                <button type='button'
-                    onClick={() => {
-                        removeItem(cart, product.newProduct)
-                    } }
+                <div className='div-quantity'>
+                    <button type='button'
+                        onClick={() => {
+                            this.removeQuantity(product);
+                        }
+                        }
+                    >-</button>
+                    <span className='quantity-item'>{product.quantity}</span>
+                    <button type='button'
+                        onClick={() => {
+                            this.addQuantity(product);
+                        }
+                        }
+                    >+</button>
+                    <button type='button'
+                        className='remove-item-btn'
+                        onClick={() => {
+                            removeItem(cart, product)
+                        }
+                        }
                     >Remove</button>
-                <p>${product.newProduct.price}</p>
+                </div>
+                <p>Price ${(product.newProduct.price).toFixed(2)}</p>
+                <p>Subtotal ${(product.newProduct.price * product.quantity).toFixed(2)}</p>
             </div>
         )
     }

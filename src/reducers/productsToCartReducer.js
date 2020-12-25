@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
   cart: [],
-  totalPrice: 0, 
+  totalPrice: 0,
 };
 
 function productToCartReducer(state = INITIAL_STATE, action) {
@@ -29,6 +29,11 @@ function productToCartReducer(state = INITIAL_STATE, action) {
         ...state,
         cart: action.upDateCart,
       };
+    case 'TOTAL_PRICE':
+      return {
+        ...state,
+        totalPrice: action.totalPriceCart
+      }
     default:
       return state;
   }
