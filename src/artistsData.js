@@ -1,4 +1,5 @@
 const arrayArtists = [{
+    id: 1,
     name: 'Amanda',
     age: '29 years',
     experience: '5 years',
@@ -15,6 +16,7 @@ const arrayArtists = [{
       './images/fineLine/fineLine5.jpg',
     ]
   },{
+    id: 2,
     name: 'Cesar',
     age: '32 years',
     experience: '10 years',
@@ -31,6 +33,7 @@ const arrayArtists = [{
       './images/oldSchool/oldSchool5.jpg',
     ]
   },{
+    id: 3,
     name: 'Julia',
     age: '25 years',
     experience: '4 years',
@@ -47,6 +50,7 @@ const arrayArtists = [{
       './images/waterColor/waterColor5.jpg',
     ]
   },{
+    id: 4,
     name: 'Karen',
     age: '27 years',
     experience: '8 years',
@@ -63,6 +67,7 @@ const arrayArtists = [{
       './images/colorfulRealism/colorfulRealism5.jpg',
     ]
   },{
+    id: 5,
     name: 'Kleber',
     age: '28 years',
     experience: '8 years',
@@ -79,6 +84,7 @@ const arrayArtists = [{
       './images/newTraditional/newTraditional5.jpg',
     ]
   },{
+    id: 6,
     name: 'Sergio',
     age: '26 years',
     experience: '7 years',

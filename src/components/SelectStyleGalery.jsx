@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import galeryTattoosAction from '../actions/galeryTattoosAction';
 import artistsData from '../artistsData';
 
-class StyleSelecedGalery extends React.Component {
+class SelectStyleSelecedGalery extends React.Component {
     render() {
         const { galeryTattoosFunc } = this.props;
         return (
@@ -12,6 +12,7 @@ class StyleSelecedGalery extends React.Component {
                     const { tattoosGalery, specialt, aboutStyle, styleFeatures, name } = artist;
                     return (
                         <button key={name}
+                            className='selected-style-galery'
                             onClick={
                                 () => galeryTattoosFunc(tattoosGalery, aboutStyle, styleFeatures)
                             }>
@@ -19,7 +20,7 @@ class StyleSelecedGalery extends React.Component {
                         </button>
                     )
                 }
-            )
+                )
         )
     }
 }
@@ -28,4 +29,4 @@ const mapDispatchToProps = (dispatch) => ({
     galeryTattoosFunc: (arrTattoosStyle, aboutStyle, styleFeatures) => dispatch(galeryTattoosAction(arrTattoosStyle, aboutStyle, styleFeatures)),
 })
 
-export default connect(null, mapDispatchToProps)(StyleSelecedGalery);
+export default connect(null, mapDispatchToProps)(SelectStyleSelecedGalery);

@@ -23,6 +23,7 @@ class TattoosProducts extends React.Component {
                 <p>${product.price}</p>
                 <button
                     type='button'
+                    className='add-to-cart-btn'
                     onClick={() => this.isProductInTheCart(product)}
                 >add to cart</button>
             </div>

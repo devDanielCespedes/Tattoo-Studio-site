@@ -30,21 +30,24 @@ class CartProduct extends React.Component {
         return (
             <div className='cart-product'>
                 <img src={product.newProduct.thumbnail} alt="tattoos product" />
-                <p>{product.newProduct.title}</p>
+                <p className='p-product-title'>{product.newProduct.title}</p>
                 <div className='div-quantity'>
-                    <button type='button'
+                    <span
+                        className='less-cart-btn'
                         onClick={() => {
                             this.removeQuantity(product);
                         }
                         }
-                    >-</button>
+                    >-</span>
                     <span className='quantity-item'>{product.quantity}</span>
-                    <button type='button'
+                    <span
+                        className='plus-cart-btn'
                         onClick={() => {
                             this.addQuantity(product);
                         }
                         }
-                    >+</button>
+                    >+</span>
+                    </div>
                     <button type='button'
                         className='remove-item-btn'
                         onClick={() => {
@@ -52,9 +55,8 @@ class CartProduct extends React.Component {
                         }
                         }
                     >Remove</button>
-                </div>
-                <p>Price ${(product.newProduct.price).toFixed(2)}</p>
-                <p>Subtotal ${(product.newProduct.price * product.quantity).toFixed(2)}</p>
+                <p className='p-price-item-cart'>Price ${(product.newProduct.price).toFixed(2)}</p>
+                <p className='p-price-item-cart'>Subtotal ${(product.newProduct.price * product.quantity).toFixed(2)}</p>
             </div>
         )
     }

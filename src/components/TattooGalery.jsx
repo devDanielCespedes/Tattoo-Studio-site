@@ -6,7 +6,7 @@ class TattooGalery extends React.Component {
     render() {
         const { tattoosGalery, aboutStyle, styleFeatures } = this.props;
         return (
-            <div className='galery-content'>
+            <div>
                 {tattoosGalery
                 .map(tattoo => <img key={tattoo} className='tattoos-galery' alt='tattos photos' src={tattoo} />)}
                 <p className='p-home-and-gallery'>{aboutStyle}</p>
