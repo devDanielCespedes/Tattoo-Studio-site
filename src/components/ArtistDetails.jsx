@@ -1,15 +1,13 @@
 import React from 'react';
 
-
-
-class Artists extends React.Component {
+class ArtistDetails extends React.Component {
     render() {
         return(
             <div>
-                Artistas
+                
             </div>
         )
     }
 }
 
-export default Artists;
+export default ArtistDetails;

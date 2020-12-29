@@ -1,79 +1,363 @@
-.App{
+.App {
   text-align: center;
-  background-image: linear-gradient(black, white);
+  background-color: rgb(175, 175, 175);
 }
 .header-content {
   background-image: url("./images/backgroundHeader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 32em;
+  background-position: bottom;
+  height: 31em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
-.social-midia{
+.header-content-after {
+  background-image: url("./images/backgroundHeader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   display: flex;
-  width: 9%;
-  align-content: space-around;
-  align-self: flex-start;
-  margin-left: 5%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 12em;
+  transition: 1.7s;
 }
-.social-midia img{
-  border-radius: 50%;
-  width: 70%;
-  opacity: 45%;
-}
-.social-midia img:hover{
-  opacity: 65%;
-  transition: 0.5s;
-}
-.social-midia img:active{
-  opacity: 100%;
-}
+
 .header-content nav {
   margin-top: 12%;
 }
-.home-links a{
+
+.home-links a {
   color: rgba(255, 255, 255, 0.459);
   font-size: 1.2em;
   margin-right: 3%;
   letter-spacing: 0.15em;
   text-decoration: none;
 }
-.home-links a:hover{
+
+.home-links a:hover {
   color: rgb(255, 255, 255);
   transition: 0.7s;
 }
-.home-links a:active{
+
+.home-links a:active {
   color: chocolate;
   transition: 0.1s;
 }
+
 .logo {
   border-radius: 50%;
-  max-width: 30%;
   opacity: 80%;
+  max-width: 40%;
+  transition: transform 1.7s cubic-bezier(0.42, 0, 0.15, 1.4);
 }
-.logo:hover{
+
+.logo-after {
+  border-radius: 50%;
+  max-width: 18%;
+  opacity: 80%;
+  transform: translate(-220%, 170%) rotate(360deg);
+}
+
+.logo img {
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.logo:hover {
   opacity: 90%;
   transition: 0.5s;
 }
-.logo:active{
+
+.logo:active {
   opacity: 100%;
 }
-.home-content {
+
+.current-page-header {
+  color: chocolate;
+  font-size: 2em;
+  margin: auto;
+  margin-bottom: 5%;
+  box-shadow: 5px 5px 15px 5px #000000;
+  background-color: #c5c5c573;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.home-map-div-artists {
   display: inline-flex;
-  font-size: 13px;
   text-align: center;
-  width: 95%;
+  width: 80%;
   align-content: space-between;
+  margin: 2%;
 }
+
+.link-home-artists {
+  text-decoration: none;
+  font-size: 1.8em;
+  color: rgba(255, 255, 255, 0.459);
+}
+
+.link-home-artists:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.link-home-artists:active {
+  color: chocolate;
+  transition: 0.1s;
+}
+
 .img-artists-home {
-  height: 70%;
-  width: 95%;
-  border-radius: 50%;
+  height: 50%;
+  width: 90%;
   opacity: 25%;
+  border-radius: 50%;
 }
-.img-artists-home:hover{
+
+.img-artists-home:hover {
+  opacity: 100%;
+  transform: translateX(5px) scale(1);
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.h2-home {
+  font-size: 3em;
+  color: #ffffffb0;
+  margin: 0;
+}
+
+.p-home-and-gallery {
+  font-size: 1.2em;
+  color: white;
+  width: 65%;
+  margin: auto;
+  margin-top: 1.5%;
+  line-height: 150%;
+}
+
+.galery-content {
+  width: 80%;
+  margin: auto;
+}
+
+.selected-style-galery {
+  margin: 1% 1% 0 0;
+  background-color: chocolate;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.tattoos-galery {
+  height: 15em;
+  width: 19%;
+  margin-top: 1%;
+  margin-right: 1%;
+  border-radius: 15px;
+}
+
+.tattoos-galery:hover {
+  transform: translatey(5px) scale(1);
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.products-content {
+  display: flex;
+  color: chocolate;
+  flex-wrap: wrap;
+}
+
+.products-content div {
+  font-size: 0.8em;
+  font-weight: bolder;
+  width: 29%;
+  margin: auto;
+  margin-top: 1%;
+  align-content: space-around;
+  background-color: #c5c5c573;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  transition: 0.5s;
+}
+
+.products-content div:hover {
+  box-shadow: 2px 2px 25px 5px #000000;
+}
+
+.products-content img {
+  width: 100%;
+}
+
+.add-to-cart-btn {
+  display: block;
+  text-decoration: none;
+  background: #2f5289;
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  padding: 8px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+  letter-spacing: 1px;
+  margin: auto;
+}
+
+.add-to-cart-btn:hover {
+  background: #2c3339;
+  color: #ffffff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.cart-content {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.cart-product {
+  height: 3em;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0.5%;
+}
+
+.p-product-title {
+  width: 28%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.p-price-item-cart {
+  width: 11%;
+}
+
+.div-quantity {
+  display: flex;
+  height: 1.5em;
+  font-size: 1.3em;
+  justify-content: space-around;
+  max-width: 15%;
+  align-self: center;
+  border: #eaeaebb6 solid 1px;
+  background-color: rgb(209, 209, 209);
+  padding: 0 2%;
+  border-radius: 5px;
+}
+
+.plus-cart-btn {
+  border-radius: 50%;
+  color: #2f518983;
+  margin: 0 30%;
+  font-size: 1.2em;
+}
+
+.plus-cart-btn:hover {
+  cursor: pointer;
+  color: #2f5289;
+}
+.plus-cart-btn:active {
+  color: chocolate;
+}
+
+.less-cart-btn {
+  border-radius: 50%;
+  color: #2f518985;
+  font-size: 1.3em;
+  margin: 0 30%;
+}
+
+.less-cart-btn:hover {
+  color: #2f5289;
+  cursor: pointer;
+}
+
+.less-cart-btn:active {
+  color: chocolate;
+}
+
+.quantity-item {
+  align-self: center;
+  margin: 0 5%;
+}
+
+.remove-item-btn {
+  max-height: 50%;
+  margin-top: 1.2%;
+  background-color: rgba(255, 0, 0, 0.74);
+  color: rgba(255, 255, 255, 0.507);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.remove-item-btn:hover {
+  background-color: rgba(255, 0, 0, 0.993);
+  color: white;
+}
+
+.remove-item-btn:active {
+  color: blue;
+}
+
+.total-price {
+  width: 100%;
+  font-size: 2em;
+}
+
+.google-maps {
+  width: 40%;
+  height: 500px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+#footer {
+  position: absolute;
+  background-color: #333333;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #ffffff85;
+  font-size: 0.8em;
+}
+
+.social-midia {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  margin-top: 1%;
+  align-content: space-around;
+}
+
+.social-midia img {
+  border-radius: 50%;
+  width: 70%;
+  opacity: 45%;
+}
+
+.social-midia img:hover {
+  opacity: 65%;
+  transition: 0.5s;
+}
+
+.social-midia img:active {
   opacity: 100%;
 }
