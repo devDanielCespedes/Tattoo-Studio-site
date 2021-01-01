@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Galery extends React.Component {
+class NotFound extends React.Component {
     render() {
         return(
             <div>
-              Galeria
+                page not found 
             </div>
         )
     }
 }
 
-export default Galery;
+export default NotFound;
