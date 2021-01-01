@@ -154,6 +154,11 @@
   display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
+  border-radius: 6px;
+  opacity: 80%;
+}
+.selected-style-galery:hover {
+  opacity: 100%;
 }
 
 .tattoos-galery {
@@ -239,10 +244,15 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0;
+  align-self: center;
 }
 
 .p-price-item-cart {
   width: 11%;
+  align-self: center;
+  margin: 0;
+  margin-top: 0.5%;
 }
 
 .div-quantity {
@@ -263,6 +273,7 @@
   color: #2f518983;
   margin: 0 30%;
   font-size: 1.2em;
+  align-self: center;
 }
 
 .plus-cart-btn:hover {
@@ -276,7 +287,8 @@
 .less-cart-btn {
   border-radius: 50%;
   color: #2f518985;
-  font-size: 1.3em;
+  align-self: center;
+  font-size: 1.8em;
   margin: 0 30%;
 }
 
@@ -319,6 +331,10 @@
   width: 100%;
   font-size: 2em;
 }
+
+.selected-button-form {
+  margin: 3% 0;
+} 
 
 .google-maps {
   width: 40%;
