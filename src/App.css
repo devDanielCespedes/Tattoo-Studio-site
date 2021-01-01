@@ -28,6 +28,7 @@
 
 .header-content nav {
   margin-top: 12%;
+  width: 60%;
 }
 
 .home-links a {
@@ -81,28 +82,33 @@
   margin: auto;
   margin-bottom: 5%;
   box-shadow: 5px 5px 15px 5px #000000;
-  background-color: #c5c5c573;
-  width: 50%;
+  background-color: #c5c5c5bb;
+  width: 30%;
   text-transform: uppercase;
 }
 
 .home-map-div-artists {
   display: inline-flex;
   text-align: center;
-  width: 80%;
+  width: 95%;
+  height: 15em;
   align-content: space-between;
   margin: 2%;
 }
 
+.artists-div-content {
+  height: 20em;
+}
+
 .link-home-artists {
-  text-decoration: none;
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: rgba(255, 255, 255, 0.459);
 }
 
 .link-home-artists:hover {
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .link-home-artists:active {
@@ -121,6 +127,22 @@
   opacity: 100%;
   transform: translateX(5px) scale(1);
   box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.modal-artist-foto {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.modal-tattoo-img {
+  width: 50%;
+  height: 20em;
+}
+
+.p-modal-artist {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .h2-home {
@@ -154,6 +176,11 @@
   display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
+  border-radius: 6px;
+  opacity: 80%;
+}
+.selected-style-galery:hover {
+  opacity: 100%;
 }
 
 .tattoos-galery {
@@ -239,10 +266,15 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0;
+  align-self: center;
 }
 
 .p-price-item-cart {
   width: 11%;
+  align-self: center;
+  margin: 0;
+  margin-top: 0.5%;
 }
 
 .div-quantity {
@@ -250,7 +282,7 @@
   height: 1.5em;
   font-size: 1.3em;
   justify-content: space-around;
-  max-width: 15%;
+  width: 8%;
   align-self: center;
   border: #eaeaebb6 solid 1px;
   background-color: rgb(209, 209, 209);
@@ -263,6 +295,7 @@
   color: #2f518983;
   margin: 0 30%;
   font-size: 1.2em;
+  align-self: center;
 }
 
 .plus-cart-btn:hover {
@@ -276,7 +309,8 @@
 .less-cart-btn {
   border-radius: 50%;
   color: #2f518985;
-  font-size: 1.3em;
+  align-self: center;
+  font-size: 1.8em;
   margin: 0 30%;
 }
 
@@ -295,8 +329,9 @@
 }
 
 .remove-item-btn {
-  max-height: 50%;
+  height: 50%;
   margin-top: 1.2%;
+  padding-bottom: 2%;
   background-color: rgba(255, 0, 0, 0.74);
   color: rgba(255, 255, 255, 0.507);
   letter-spacing: 2px;
@@ -319,6 +354,10 @@
   width: 100%;
   font-size: 2em;
 }
+
+.selected-button-form {
+  margin: 3% 0;
+} 
 
 .google-maps {
   width: 40%;
