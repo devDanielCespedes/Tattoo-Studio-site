@@ -28,6 +28,7 @@
 
 .header-content nav {
   margin-top: 12%;
+  width: 60%;
 }
 
 .home-links a {
@@ -82,27 +83,32 @@
   margin-bottom: 5%;
   box-shadow: 5px 5px 15px 5px #000000;
   background-color: #c5c5c5bb;
-  width: 50%;
+  width: 30%;
   text-transform: uppercase;
 }
 
 .home-map-div-artists {
   display: inline-flex;
   text-align: center;
-  width: 80%;
+  width: 95%;
+  height: 15em;
   align-content: space-between;
   margin: 2%;
 }
 
+.artists-div-content {
+  height: 20em;
+}
+
 .link-home-artists {
-  text-decoration: none;
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: rgba(255, 255, 255, 0.459);
 }
 
 .link-home-artists:hover {
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .link-home-artists:active {
@@ -121,6 +127,22 @@
   opacity: 100%;
   transform: translateX(5px) scale(1);
   box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.modal-artist-foto {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.modal-tattoo-img {
+  width: 50%;
+  height: 20em;
+}
+
+.p-modal-artist {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .h2-home {

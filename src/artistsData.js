@@ -1,6 +1,6 @@
 const arrayArtists = [{
     id: 1,
-    name: 'Amanda',
+    name: 'Amanda Alexandreli',
     age: '29 years',
     experience: '5 years',
     specialt: 'fine line',
@@ -17,7 +17,7 @@ const arrayArtists = [{
     ]
   },{
     id: 2,
-    name: 'Cesar',
+    name: 'Cesar Amato',
     age: '32 years',
     experience: '10 years',
     specialt: 'oldSchool',
@@ -34,7 +34,7 @@ const arrayArtists = [{
     ]
   },{
     id: 3,
-    name: 'Julia',
+    name: 'Julia Agrizzi',
     age: '25 years',
     experience: '4 years',
     specialt: 'watercolor',
@@ -51,7 +51,7 @@ const arrayArtists = [{
     ]
   },{
     id: 4,
-    name: 'Karen',
+    name: 'Karen Chiecon',
     age: '27 years',
     experience: '8 years',
     specialt: 'colorful realism',
@@ -68,7 +68,7 @@ const arrayArtists = [{
     ]
   },{
     id: 5,
-    name: 'Kleber',
+    name: 'Kleber Erbolato',
     age: '28 years',
     experience: '8 years',
     specialt: 'new traditional',
@@ -85,7 +85,7 @@ const arrayArtists = [{
     ]
   },{
     id: 6,
-    name: 'Sergio',
+    name: 'Sergio Gottardo',
     age: '26 years',
     experience: '7 years',
     specialt: 'lettering',

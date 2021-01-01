@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Logo from '../images/logo.jpg';
 class Header extends React.Component {
@@ -12,7 +13,7 @@ class Header extends React.Component {
     }, 1000)
   }
     render(){
-      let { pathname } = this.props.location;
+      let { location, cart } = this.props;
         return(
             <div className='header-content'>
               <div className='logo'>
@@ -25,7 +26,7 @@ class Header extends React.Component {
                 </Link>
               </div>
               <nav className='home-links'>
-              <p className='current-page-header'>{pathname === '/' ? 'home' : pathname.slice(1)}</p>
+              <p className='current-page-header'>{location.pathname === '/' ? 'home' : location.pathname.slice(1)}</p>
                 <Link
                     to='/'
                   >
@@ -49,7 +50,7 @@ class Header extends React.Component {
                   <Link
                     to='/cart'
                   >
-                    CART
+                    CART-{cart.length} ITEMS
                   </Link>
                   <Link
                     to='/contact'
@@ -62,4 +63,8 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+const mapStateToProps = (state) => ({
+  cart: state.productToCartReducer.cart,
+})
+
+export default connect(mapStateToProps)(Header);
