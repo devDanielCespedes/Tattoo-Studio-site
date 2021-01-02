@@ -60,7 +60,7 @@
   border-radius: 50%;
   max-width: 18%;
   opacity: 80%;
-  transform: translate(-220%, 170%) rotate(360deg);
+  transform: translate(-220%, 200%) rotate(360deg);
 }
 
 .logo img {
@@ -167,7 +167,7 @@
 
 .selected-style-galery {
   margin: 1% 1% 0 0;
-  background-color: chocolate;
+  background-color: rgb(70, 70, 70);
   border: none;
   color: white;
   padding: 15px 20px;
@@ -178,6 +178,7 @@
   text-transform: uppercase;
   border-radius: 6px;
   opacity: 80%;
+  transition: 0.4s;
 }
 .selected-style-galery:hover {
   opacity: 100%;
@@ -383,7 +384,7 @@
   display: flex;
   align-items: center;
   width: 10%;
-  margin-top: 1%;
+  margin: 1% 0;
   align-content: space-around;
 }
 

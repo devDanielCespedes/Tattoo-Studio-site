@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { SRLWrapper } from "simple-react-lightbox";
 
 class TattooGalery extends React.Component {
-
     render() {
         const { tattoosGalery, aboutStyle, styleFeatures, specialt } = this.props;
         return (

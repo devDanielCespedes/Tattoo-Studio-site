@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 const Artist = (props) => {
-    const { artist } = props
+    const { artist } = props;
 
     const [modal, setModal] = useState(false);
 
