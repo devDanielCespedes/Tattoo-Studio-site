@@ -14,7 +14,7 @@ class SelectStyleSelecedGalery extends React.Component {
                         <button key={name}
                             className='selected-style-galery'
                             onClick={
-                                () => galeryTattoosFunc(tattoosGalery, aboutStyle, styleFeatures)
+                                () => galeryTattoosFunc(tattoosGalery, aboutStyle, styleFeatures, specialt)
                             }>
                             {specialt}
                         </button>
@@ -26,7 +26,7 @@ class SelectStyleSelecedGalery extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    galeryTattoosFunc: (arrTattoosStyle, aboutStyle, styleFeatures) => dispatch(galeryTattoosAction(arrTattoosStyle, aboutStyle, styleFeatures)),
+    galeryTattoosFunc: (arrTattoosStyle, aboutStyle, styleFeatures, specialt) => dispatch(galeryTattoosAction(arrTattoosStyle, aboutStyle, styleFeatures, specialt)),
 })
 
 export default connect(null, mapDispatchToProps)(SelectStyleSelecedGalery);

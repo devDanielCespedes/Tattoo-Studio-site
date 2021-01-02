@@ -35,7 +35,7 @@ const Artist = (props) => {
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="secondary" onClick={toggle}>
+                    <Button color="danger" onClick={toggle}>
                         CLOSE
                     </Button>
                 </ModalFooter>
