@@ -27,7 +27,7 @@
 }
 
 .header-content nav {
-  margin-top: 12%;
+  margin-top: 9%;
   width: 60%;
 }
 
@@ -60,7 +60,7 @@
   border-radius: 50%;
   max-width: 18%;
   opacity: 80%;
-  transform: translate(-220%, 200%) rotate(360deg);
+  transform: translate(-220%, 170%) rotate(360deg);
 }
 
 .logo img {
@@ -207,6 +207,7 @@
 .products-content div {
   font-size: 0.8em;
   font-weight: bolder;
+  height: 42%;
   width: 29%;
   margin: auto;
   margin-top: 1%;
@@ -223,6 +224,11 @@
 
 .products-content img {
   width: 100%;
+}
+
+.tattoo-product-title {
+  margin-top: 20px;
+  height: 50px;
 }
 
 .add-to-cart-btn {
@@ -401,4 +407,333 @@
 
 .social-midia img:active {
   opacity: 100%;
+}
+
+@media (max-width: 1222px) {
+
+  .header-content {
+    background-image: url("./images/backgroundHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 23em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header-content-after {
+    background-image: url("./images/backgroundHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 10em;
+    transition: 1.7s;
+  }
+
+  .logo {
+    border-radius: 50%;
+    opacity: 80%;
+    max-width: 40%;
+    transition: transform 1.7s cubic-bezier(0.42, 0, 0.15, 1.4);
+  }
+  
+  .logo-after {
+    border-radius: 50%;
+    max-width: 18%;
+    opacity: 80%;
+    transform: translate(-220%, 130%) rotate(360deg);
+  }
+
+  .current-page-header {
+    font-size: 1.3em;
+  }
+
+  .header-content nav {
+    margin-top: 8%;
+  }
+
+  .home-links a{
+    font-size: 0.7em;
+  }
+
+  .home-map-div-artists {
+    height: 150px;
+  }
+
+  .artists-div-content span{
+    display: none;
+  }
+
+  .img-artists-home {
+    height: 40%;
+    width: 70%;
+    opacity: 25%;
+    border-radius: 50%;
+  }
+
+  .h2-home {
+    font-size: 1.9em;
+  }
+
+  .p-home-and-gallery {
+    font-size: 0.9em;
+  }
+  
+  .selected-style-galery {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .div-quantity {
+   font-size: 1.1em;
+  }
+
+  .quantity-item {
+    font-size: 0.8em;
+  }
+
+  .remove-item-btn {
+    font-size: 0.7em;
+    padding-top: 5px;
+  }
+
+  .p-price-item-cart {
+    font-size: 0.9em;
+    width: 13%;
+  }
+
+}
+
+@media (max-width: 916px) {
+
+  .header-content {
+    background-image: url("./images/backgroundHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header-content-after {
+    background-image: url("./images/backgroundHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 8em;
+    transition: 1.7s;
+  }
+
+  .logo {
+    border-radius: 50%;
+    opacity: 80%;
+    max-width: 40%;
+    transition: transform 1.7s cubic-bezier(0.42, 0, 0.15, 1.4);
+  }
+  
+  .logo-after {
+    border-radius: 50%;
+    max-width: 18%;
+    opacity: 80%;
+    transform: translate(-220%, 45%) rotate(360deg);
+  }
+
+  .header-content nav {
+    margin-top: 2%;
+  }
+
+  .home-links a{
+    font-size: 0.6em;
+  }
+
+  .current-page-header {
+    font-size: 0.9em;
+  }
+
+  .home-map-div-artists {
+    height: 100px;
+  }
+
+  .artists-div-content span{
+    display: none;
+  }
+
+  .link-home-artists p {
+    display: none;
+  }
+
+  .img-artists-home {
+    height: 30%;
+  }
+
+  .h2-home {
+    font-size: 1.7em;
+  }
+  
+  .selected-style-galery {
+    padding: 5px 10px;
+    font-size: 9.5px;
+  }
+
+  .tattoos-galery {
+    height: 10em;
+  }
+
+  .p-home-and-gallery {
+    font-size: 0.9em;
+  }
+
+  .products-content div{
+    height: 25%;
+  }
+
+  .div-quantity {
+   font-size: 1em;
+  }
+
+  .quantity-item {
+    font-size: 0.9em;
+  }
+
+  .remove-item-btn {
+    font-size: 0.5em;
+    padding: 0 5px;
+    margin-top: 12px;
+  }
+
+  .p-product-title {
+    font-size: 0.8em;
+  }
+
+  .p-price-item-cart {
+    font-size: 0.7em;
+    width: 13%;
+  }
+
+  .total-price {
+    font-size: 1.5em;
+  }
+
+  .contact-content {
+    font-size: 1.1em;
+  }
+
+  #Description-tattoo {
+    width: 70%;
+    height: 20em;
+  }
+
+  .google-maps {
+    height: 350px;
+    width: 70%;
+  }
+
+  .social-midia {
+    width: 20%;
+  }
+
+  #footer {
+    height: 5em;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .header-content {
+    background-image: url("./images/backgroundHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header-content-after {
+    background-image: url("./images/backgroundHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 5em;
+    transition: 1.7s;
+  }
+
+  .logo {
+    border-radius: 50%;
+    opacity: 80%;
+    max-width: 40%;
+    transition: transform 1.7s cubic-bezier(0.42, 0, 0.15, 1.4);
+  }
+  
+  .logo-after {
+    border-radius: 50%;
+    max-width: 18%;
+    opacity: 80%;
+    transform: translate(-220%, 70%) rotate(360deg);
+  }
+
+  .current-page-header {
+    font-size: 0.7em;
+    margin-top: 10%;
+  }
+
+  /* .home-links a {
+    display: none;
+  } */
+
+  .home-map-div-artists {
+    height: 70px;
+  }
+  
+  .img-artists-home {
+    height: 15%;
+  }
+
+  .h2-home {
+    font-size: 1.2em;
+  }
+
+  .galery-content {
+    width: 100%;
+  }
+
+  .selected-style-galery {
+    font-size: 0.5em;
+    padding: 2px;
+  }
+  
+  .tattoos-galery {
+    margin: auto;
+    height: 7em;
+    margin-top: 1%;
+  }
+
+  .p-home-and-gallery {
+    font-size: 0.6em;
+  }
+
+  .google-maps {
+    height: 200px;
+    width: 70%;
+  }
+
+  .social-midia {
+    width: 25%;
+  }
 }

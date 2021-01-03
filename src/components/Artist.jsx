@@ -10,14 +10,14 @@ const Artist = (props) => {
     const toggle = () => setModal(!modal);
 
     return (
-        <div>
+        <div className='artist-and-artist-modal-content'>
             <div className='artists-div-content'>
                 <Link className='link-home-artists'
                     onClick={toggle}
                 >
                     <span>{artist.name}</span>
                     <img className='img-artists-home' id={artist.name} src={artist.imgPath} alt="Foto da artista Amanda" />
-                    <b>{artist.specialt}</b>
+                    <p>{artist.specialt}</p>
                 </Link>
             </div>
             <Modal isOpen={modal} toggle={toggle}>
