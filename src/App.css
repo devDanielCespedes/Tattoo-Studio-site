@@ -409,6 +409,10 @@
   opacity: 100%;
 }
 
+.close-menu-bars {
+  display: none;
+}
+
 @media (max-width: 1222px) {
 
   .header-content {
@@ -649,13 +653,13 @@
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 625px) {
   .header-content {
     background-image: url("./images/backgroundHeader.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: 10em;
+    height: 15em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -670,7 +674,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: 5em;
+    height: 6em;
     transition: 1.7s;
   }
 
@@ -683,9 +687,16 @@
   
   .logo-after {
     border-radius: 50%;
-    max-width: 18%;
+    width: 18%;
     opacity: 80%;
-    transform: translate(-220%, 70%) rotate(360deg);
+    transform: translate(-220%, 150%) rotate(360deg);
+  }
+
+  .logo-after-menu-bars-open {
+    border-radius: 50%;
+    width: 18%;
+    opacity: 80%;
+    transform: translate(-190%, 1050%);
   }
 
   .current-page-header {
@@ -693,9 +704,9 @@
     margin-top: 10%;
   }
 
-  /* .home-links a {
+  .home-links a {
     display: none;
-  } */
+  }
 
   .home-map-div-artists {
     height: 70px;
@@ -734,6 +745,55 @@
   }
 
   .social-midia {
-    width: 25%;
+    width: 20%;
+  }
+
+  .close-menu-bars {
+    display: initial;
+    align-self: flex-end;
+    transform: translate(-400%, 400%);
+    width: 0.9em;
+    height: 1.2em;
+    color: white;
+    border: none;
+    background: none;
+  }
+
+  .open-menu-bars {
+    display: initial;
+    align-self: flex-end;
+    transform: translate(-400%, 1750%);
+    width: 0.9em;
+    height: 1.2em;
+    color: white;
+    border: none;
+    background: none;
+  }
+
+  .fa-bars {
+    font-size: 1em;
+  }
+
+  .open-icon-bars a {
+    display: none;
+    height: 12vh;
+    width: 30vw;
+    position: relative;
+    top: 71%;
+    left: 85%;
+    background-color: rgb(210, 105, 30);
+    z-index: 1;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 535px) { 
+  .logo-after-menu-bars-open {
+    border-radius: 50%;
+    width: 18%;
+    opacity: 80%;
+    transform: translate(-190%, 1200%);
   }
 }
