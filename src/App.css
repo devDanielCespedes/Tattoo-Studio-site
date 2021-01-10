@@ -696,7 +696,7 @@
     border-radius: 50%;
     width: 18%;
     opacity: 80%;
-    transform: translate(-190%, 1050%);
+    transform: translate(-190%, 880%);
   }
 
   .current-page-header {
@@ -751,7 +751,7 @@
   .close-menu-bars {
     display: initial;
     align-self: flex-end;
-    transform: translate(-400%, 400%);
+    transform: translate(-400%, 320%);
     width: 0.9em;
     height: 1.2em;
     color: white;
@@ -762,7 +762,7 @@
   .open-menu-bars {
     display: initial;
     align-self: flex-end;
-    transform: translate(-400%, 1750%);
+    transform: translate(-400%, 1900%);
     width: 0.9em;
     height: 1.2em;
     color: white;
@@ -776,16 +776,17 @@
 
   .open-icon-bars a {
     display: none;
-    height: 12vh;
-    width: 30vw;
+    font-size: 0.8em;
+    height: 8vh;
+    width: 31vw;
     position: relative;
-    top: 71%;
-    left: 85%;
+    top: 53%;
+    left: 80%;
     background-color: rgb(210, 105, 30);
     z-index: 1;
     border-radius: 8px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
 
@@ -794,6 +795,19 @@
     border-radius: 50%;
     width: 18%;
     opacity: 80%;
-    transform: translate(-190%, 1200%);
+    transform: translate(-180%, 980%);
+  }
+
+  .modal-dialog {
+    width: 70%;
+    margin: auto;
+  }
+
+  .p-modal-artist {
+    font-size: 0.9em;
+  }
+
+  .modal-tattoo-img {
+    height: 12em;
   }
 }
