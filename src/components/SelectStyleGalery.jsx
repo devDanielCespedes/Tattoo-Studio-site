@@ -4,6 +4,18 @@ import galeryTattoosAction from '../actions/galeryTattoosAction';
 import artistsData from '../artistsData';
 
 class SelectStyleSelecedGalery extends React.Component {
+
+    constructor() {
+        super();
+        this.handleChangeBG = this.handleChangeBG.bind(this);
+    }
+
+    handleChangeBG({ target }) {
+        const allBtnsSelectStyleGalery = document.querySelectorAll('.selected-style-galery');
+        allBtnsSelectStyleGalery.forEach(btn => {
+          return  btn !== target ? btn.style.backgroundColor = 'grey' : target.style.backgroundColor = 'chocolate';
+        });
+    }
     render() {
         const { galeryTattoosFunc } = this.props;
         return (
@@ -14,7 +26,10 @@ class SelectStyleSelecedGalery extends React.Component {
                         <button key={name}
                             className='selected-style-galery'
                             onClick={
-                                () => galeryTattoosFunc(tattoosGalery, aboutStyle, styleFeatures)
+                                (e) => {
+                                    galeryTattoosFunc(tattoosGalery, aboutStyle, styleFeatures, specialt);
+                                    this.handleChangeBG(e)
+                                } 
                             }>
                             {specialt}
                         </button>
@@ -26,7 +41,7 @@ class SelectStyleSelecedGalery extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    galeryTattoosFunc: (arrTattoosStyle, aboutStyle, styleFeatures) => dispatch(galeryTattoosAction(arrTattoosStyle, aboutStyle, styleFeatures)),
+    galeryTattoosFunc: (arrTattoosStyle, aboutStyle, styleFeatures, specialt) => dispatch(galeryTattoosAction(arrTattoosStyle, aboutStyle, styleFeatures, specialt)),
 })
 
 export default connect(null, mapDispatchToProps)(SelectStyleSelecedGalery);

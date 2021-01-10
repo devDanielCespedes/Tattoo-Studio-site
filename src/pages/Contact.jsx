@@ -39,7 +39,7 @@ class Contact extends React.Component {
     render() {
         const { orderTattoo } = this.state;
         return (
-            <div>
+            <div className='contact-content'>
                 <Button
                     onClick={(e) => this.handlerTattooOrderRender(e)}
                     id='tattoo-order'

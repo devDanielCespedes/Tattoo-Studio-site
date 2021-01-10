@@ -3,21 +3,21 @@ import { Link } from 'react-router-dom';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 const Artist = (props) => {
-    const { artist } = props
+    const { artist } = props;
 
     const [modal, setModal] = useState(false);
 
     const toggle = () => setModal(!modal);
 
     return (
-        <div>
+        <div className='artist-and-artist-modal-content'>
             <div className='artists-div-content'>
                 <Link className='link-home-artists'
                     onClick={toggle}
                 >
                     <span>{artist.name}</span>
                     <img className='img-artists-home' id={artist.name} src={artist.imgPath} alt="Foto da artista Amanda" />
-                    <b>{artist.specialt}</b>
+                    <p>{artist.specialt}</p>
                 </Link>
             </div>
             <Modal isOpen={modal} toggle={toggle}>
@@ -35,7 +35,7 @@ const Artist = (props) => {
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="secondary" onClick={toggle}>
+                    <Button color="danger" onClick={toggle}>
                         CLOSE
                     </Button>
                 </ModalFooter>

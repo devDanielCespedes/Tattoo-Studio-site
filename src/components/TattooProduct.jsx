@@ -19,8 +19,8 @@ class TattoosProducts extends React.Component {
         return (
             <div>
                 <img src={product.thumbnail} alt="tattoos products" />
-                <p>{product.title}</p>
-                <p>${product.price}</p>
+                <p className='tattoo-product-title'>{product.title}</p>
+                <p className='tattoo-product-price'>{product.price}</p>
                 <button
                     type='button'
                     className='add-to-cart-btn'
